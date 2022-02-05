@@ -90,7 +90,7 @@ section {
 }
 
 .header .logo img {
-    height: 6rem;
+    height: 5rem;
 }
 
 .header .navbar a {
@@ -465,12 +465,12 @@ section {
 .loginbox{
     width: 600px;
     height: 460px;
-    background-color: #cccc;
+    background-color: #090910;
     opacity: 90%;
     border-radius: 20px;
     top: -10%;
     left: 50%;
-    color: black;
+    color: #fff;
     position: absolute;
     transform: translate(-50%, 50%);
     box-sizing: border-box;
@@ -506,13 +506,15 @@ h1{
 
 .loginbox input[type="text"],input[type="password"], input[type = "email"]{
     border: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
     background: transparent;
     outline: none;
     height: 40px;
     color: #fff;
     font-size: 16px;
 }
-a{
-    font-size: 14px;
+.background .loginbox a{
+    font-size: 12px;
+    color: #fff;
 }
+
