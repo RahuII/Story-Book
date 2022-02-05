@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background: url(https://pbs.twimg.com/media/FKwXUmeaAAAmWHw?format=jpg&name=large) no-repeat;
+    height: 100vh;
+    background-size:cover;
+}
+.loginbox{
+    width: 600px;
+    height: 460px;
+    background-color: #cccc;
+    opacity: 90%;
+    border-radius: 20px;
+    top: -10%;
+    left: 50%;
+    color: black;
+    position: absolute;
+    transform: translate(-50%, 50%);
+    box-sizing: border-box;
+    padding: 70px 70px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    left: calc(50% - 50px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 32px;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-size:medium;
+    font-weight: bold;
+
+}
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+
+.loginbox input[type="text"],input[type="password"], input[type = "email"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+a{
+    font-size: 14px;
+}
