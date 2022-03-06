@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
-
 :root {
     --main-color: #d3ad7f;
     --black: #13131a;
@@ -29,7 +28,6 @@ html {
 html::-webkit-scrollbar {
     width: .8rem;
 }
-
 
 html::-webkit-scrollbar-track {
     background: transparent;
@@ -98,9 +96,12 @@ section {
     font-size: 1.6rem;
     color: #fff;
 }
+
 .fa-bars:before {
     content: "\f0c9";
 }
+
+
 /* .header .navbar a {
     color: var(--black);
     display: block;
@@ -200,7 +201,6 @@ section {
     gap: 1.5rem;
 }
 
-
 .header .cart-items-container .cart-item .content h3 {
     font-size: 2rem;
     color: var(--black);
@@ -239,6 +239,7 @@ section {
     padding: 1rem 0;
     color: #eee;
 }
+
 .header .cart-items-container .cart-item .fa-times {
     position: absolute;
     top: 1rem;
@@ -300,6 +301,7 @@ section {
     border: var(--border);
 }
 
+
 /* .category .box-container .box img {
     height: 10rem;
 } */
@@ -322,10 +324,12 @@ section {
     padding: .5rem 0;
 }
 
+
 /* 
 .category .box-container .box:hover {
     background: #fff;
 } */
+
 
 /* .category .box-container .box:hover>* {
     color: var(--black);
@@ -386,30 +390,24 @@ section {
 }
 
 
-
 /* media queries  */
-@media (max-width:991px) {
 
+@media (max-width:991px) {
     html {
         font-size: 55%;
     }
-
     .header {
         padding: 1.5rem 2rem;
     }
-
     section {
         padding: 2rem;
     }
-
 }
 
 @media (max-width:768px) {
-
     #category-btn {
         display: inline-block;
     }
-
     .header .navbar {
         position: absolute;
         top: 100%;
@@ -418,11 +416,9 @@ section {
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
-
     .header .navbar.active {
         right: 0;
     }
-
     .header .navbar a {
         color: var(--black);
         display: block;
@@ -430,91 +426,21 @@ section {
         padding: .5rem;
         font-size: 2rem;
     }
-
     .home {
         background-position: left;
         justify-content: center;
         text-align: center;
     }
-
     .home .content h3 {
         font-size: 4.5rem;
     }
-
     .home .content p {
         font-size: 1.5rem;
     }
-
 }
 
 @media (max-width:450px) {
-
     html {
         font-size: 50%;
     }
-
 }
-
-
-/*............................... login page CSS .............................*/
-.background{
-    background: url(https://pbs.twimg.com/media/FKwXUmeaAAAmWHw?format=jpg&name=large) no-repeat;
-    height: 100vh;
-    background-size:cover;
-}
-.loginbox{
-    width: 600px;
-    height: 460px;
-    background-color: #090910;
-    opacity: 90%;
-    border-radius: 20px;
-    top: -10%;
-    left: 50%;
-    color: #fff;
-    position: absolute;
-    transform: translate(-50%, 50%);
-    box-sizing: border-box;
-    padding: 70px 70px;
-}
-.avatar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -10%;
-    left: calc(50% - 50px);
-}
-h1{
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 32px;
-}
-.loginbox p{
-    margin: 0;
-    padding: 0;
-    font-size:medium;
-    font-weight: bold;
-
-}
-.loginbox input{
-    width: 100%;
-    margin-bottom: 20px;
-    height: 40px;
-}
-
-
-.loginbox input[type="text"],input[type="password"], input[type = "email"]{
-    border: none;
-    border-bottom: 1px solid #000;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
-}
-.background .loginbox a{
-    font-size: 12px;
-    color: #fff;
-}
-
