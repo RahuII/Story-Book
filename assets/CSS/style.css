@@ -3,13 +3,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --main-color: #d3ad7f;
-    --black: #13131a;
-    --bg: #010103;
-    --border: .1rem solid rgba(255, 255, 255, .3);
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     background: url(https://pbs.twimg.com/media/FKwXUmeaAAAmWHw?format=jpg&name=large);
@@ -79,7 +72,7 @@ a {
 }
 
 .social-container a {
-    border: 1px solid #d3ad7f;
+    border: 1px solid #13131a;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
@@ -99,8 +92,8 @@ a {
 
 button {
     border-radius: 20px;
-    border: 1px solid #d3ad7f;
-    background: #d3ad7f;
+    border: 1px solid #13131a;
+    background: #13131a;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
@@ -155,8 +148,8 @@ button.ghost {
 }
 
 .overlay {
-    background: #ff416c;
-    background: linear-gradient(to right, #d3ad7f, #d3ad7f) no-repeat 0 0 / cover;
+    /* background: #ff416c; */
+    background: linear-gradient(to right, #13131a, #13131a) no-repeat 0 0 / cover;
     color: #fff;
     position: relative;
     left: -100%;

@@ -299,6 +299,7 @@ section {
     padding: 4rem;
     text-align: center;
     border: var(--border);
+    background-color: #13131a;
 }
 
 
