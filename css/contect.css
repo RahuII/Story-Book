@@ -1,0 +1,94 @@
+.main {
+    margin-top: 10%;
+    color: white;
+    padding: 2rem 7%;
+    padding-top: 2rem;
+    padding-right: 7%;
+    padding-bottom: 2rem;
+    padding-left: 7%;
+}
+
+h1 {
+    font-size: 100px;
+    text-transform: none;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+.main-left {
+    font-family: 'Eczar', serif;
+    color: #393948;
+}
+
+.contect-us {
+    font-family: 'Eczar', serif;
+}
+
+.form-1 input {
+    font-size: x-large;
+    border-top: none;
+    border-bottom: 2px;
+    background-color: #393948;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+label {
+    margin-top: 20px;
+    margin: 20px;
+    font-size: large;
+}
+
+hr {
+    color: white;
+    border: 1px solid white;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px 40px 10px 10px;
+}
+
+textarea {
+    color: white;
+    background-color: transparent;
+    background-color: #393948;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-size: x-large;
+}
+
+li {
+    font-size: x-large;
+    color: #6c6c71;
+}
+
+ul {
+    padding-bottom: 100px;
+    margin-left: 50px;
+}
+
+.send:hover {
+    color: #d3ad7f;
+    text-decoration: underline;
+}
+
+.send {
+    text-transform: none;
+    display: inline;
+    font-size: 40px;
+    margin: 20px;
+    font-family: 'Eczar', serif;
+    color: white;
+}
