@@ -6,26 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Radius - Signin/Signup</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <?php session_start(); ?>
 </head>
 
 <body>
     <header class="header">
 
-        <a href="index.html" class="logo">
+        <a href="index.php" class="logo">
             <img src="images/books.png" alt="">
         </a>
 
         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="aboutPage.html">About</a>
+            <a href="index.php">Home</a>
+            <a href="aboutPage.php">About</a>
             <a href="categoryPage.html">Books</a>
             <!-- <a href="genrePage.html">genre</a> -->
-            <a href="contectPage.html">Contact</a>
-            <a href="logIn-page.html">LogIn</a>
+            <a href="contectPage.php">Contact</a>
+            <a href="logIn-page.php">LogIn</a>
         </nav>
 
         <div class="icons">
@@ -40,7 +40,7 @@
     </header>
     <div class="container" id="container">
         <div class="form-container sign-up-container">{}
-            <form autocomplete="off" method="post" action="#" onSubmit="return validate(this);" name="form">
+            <form autocomplete="off" method="post" action="signUp.php" onSubmit="return validate(this);" name="form">
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -51,7 +51,7 @@
                 <input type="text" placeholder="name" name="name" />
                 <input type="email" placeholder="email" name="email" />
                 <input type="password" placeholder="password" name="password" />
-                <button>Sign Up</button>
+                <button type="submit">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
@@ -62,7 +62,16 @@
                     <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <span>or use your account</span>
+                <!-- <span>or use your account</span> -->
+                <?php
+                if (isset($_SESSION['status'])) {
+                ?>
+                    <span style="color: green;">
+                        <?php echo $_SESSION['status']; ?>
+                    </span>
+                <?php unset($_SESSION['status']);
+                }
+                ?>
                 <input type="email" placeholder="Email" name="email" />
                 <input type="password" placeholder="Password" name="password" />
                 <a href="#">Forgot your password?</a>

@@ -22,16 +22,16 @@
 
     <header class="header">
 
-        <a href="index.html" class="logo">
+        <a href="index.php" class="logo">
             <img src="images/books.png" alt="">
         </a>
         <nav class="navbar">
-            <a href="index.html">home</a>
-            <a href="aboutPage.html">About</a>
-            <a href="booksPage.html">Books</a>
+            <a href="index.php">home</a>
+            <a href="aboutPage.php">About</a>
+            <a href="booksPage.php">Books</a>
             <!-- <a href="genrePage.html">genre</a> -->
-            <a href="contectPage.html">contact</a>
-            <a href="logIn-page.html">LogIn</a>
+            <a href="contectPage.php">contact</a>
+            <a href="logIn-page.php">LogIn</a>
         </nav>
 
         <div class="icons">
