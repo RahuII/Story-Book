@@ -48,14 +48,14 @@
                     <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email for registration</span>
-                <input type="text" placeholder="name" name="name" />
-                <input type="email" placeholder="email" name="email" />
+                <input type="text" placeholder="Name" name="name" />
+                <input type="text" placeholder="Email" name="email" />
                 <input type="password" placeholder="password" name="password" />
                 <button type="submit">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form autocomplete="off" method="post" action="#" onSubmit="return validate(this);" name="form">
+            <form autocomplete="off" method="post" action="loginProcess.php" onSubmit="return validate(this);" name="form">
                 <h1>Sign in</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -72,10 +72,10 @@
                 <?php unset($_SESSION['status']);
                 }
                 ?>
-                <input type="email" placeholder="Email" name="email" />
-                <input type="password" placeholder="Password" name="password" />
+                <input type="email" placeholder="Email" name="uname" />
+                <input type="password" placeholder="Password" name="pwd" />
                 <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <button type="submit">Sign In</button>
             </form>
         </div>
         <div class="overlay-container">

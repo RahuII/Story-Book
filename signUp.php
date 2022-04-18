@@ -15,7 +15,7 @@
         // username => root
         // password => empty
         // database name => staff
-        $conn = mysqli_connect("localhost", "wt", "wt", "wt");
+        $conn = mysqli_connect("localhost", "wt", "wt", "storybook");
 
         // Check connection
         if ($conn === false) {
@@ -27,7 +27,7 @@
         $uname = $_REQUEST['email'];
         $pwd = md5($_REQUEST['password']);
 
-        $s = "select * from wt where uname = '$uname'";
+        $s = "select * from user where uname = '$uname'";
         $result = mysqli_query($conn, $s);
         $num = mysqli_num_rows($result);
         if ($num == 1) {
@@ -37,7 +37,7 @@
             </script>
         <?php
         } else {
-            $sql = "INSERT INTO wt  VALUES ('$uname','$pwd','$name')";
+            $sql = "INSERT INTO user  VALUES ('$uname','$name','$pwd')";
             if (mysqli_query($conn, $sql)) {
                 $_SESSION['status'] = "SignUp Successfully";
                 header("Location: logIn-page.php");

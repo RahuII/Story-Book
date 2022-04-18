@@ -12,7 +12,7 @@ signInButton.addEventListener('click', () =>
 
 
 // JS for exp-6
-var ck_name = /^[A-Za-z0-9]{3,20}$/;
+var ck_name = /^[a-zA-Z ]*$/;
 var ck_email = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 var ck_password = /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/;
 
