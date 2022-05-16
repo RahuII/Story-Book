@@ -21,7 +21,7 @@ $txt = $_REQUEST['txt'];
 $sql = "INSERT INTO request  VALUES ('$name','$email','$txt')";
 if (mysqli_query($conn, $sql)) {
     $_SESSION['status'] = "Request sand Successfully";
-    header("Location: ../contectPage.php");
+    header("Location: ../contactPage.php");
 } else {
     echo "ERROR: Hush! Sorry $sql. "
         . mysqli_error($conn);

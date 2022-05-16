@@ -25,7 +25,7 @@
             <a href="aboutPage.php">About</a>
             <a href="categoryPage.html">Books</a>
             <!-- <a href="genrePage.html">genre</a> -->
-            <a href="contectPage.php">Contact</a>
+            <a href="contactPage.php">Contact</a>
             <?php
             if (!isset($_SESSION['name'])) {
             ?>

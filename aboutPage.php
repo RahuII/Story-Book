@@ -38,15 +38,15 @@
             <a href="aboutPage.php">About</a>
             <a href="booksPage.php">Books</a>
             <!-- <a href="genrePage.html">genre</a> -->
-            <a href="contectPage.php">contact</a>
+            <a href="contactPage.php">contact</a>
             <?php
             if (!isset($_SESSION['name'])) {
             ?>
-                <a href="logIn-page.php">LogIn</a>
+            <a href="logIn-page.php">LogIn</a>
             <?php
             } else {
             ?>
-                <a href="php/user-profile.php"><?php echo $_SESSION['name']; ?></a>
+            <a href="php/user-profile.php"><?php echo $_SESSION['name']; ?></a>
             <?php
             }
             ?>

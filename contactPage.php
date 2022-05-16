@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contect us</title>
+    <title>Contact us</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -13,7 +13,7 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- <link rel="stylesheet" href="css/css1.css"> -->
-    <link rel="stylesheet" href="css/contect.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
@@ -36,15 +36,15 @@
             <a href="aboutPage.php">About</a>
             <a href="booksPage.php">Books</a>
             <!-- <a href="genrePage.html">genre</a> -->
-            <a href="contectPage.php">contact</a>
+            <a href="contactPage.php">contact</a>
             <?php
             if (!isset($_SESSION['name'])) {
             ?>
-                <a href="logIn-page.php">LogIn</a>
+            <a href="logIn-page.php">LogIn</a>
             <?php
             } else {
             ?>
-                <a href="php/user-profile.php"><?php echo $_SESSION['name']; ?></a>
+            <a href="php/user-profile.php"><?php echo $_SESSION['name']; ?></a>
             <?php
             }
             ?>
@@ -62,7 +62,7 @@
         </div>
     </header>
     <div class="main">
-        <h1 class="contect-us">Contact us</h1>
+        <h1 class="contact-us">Contact us</h1>
         <hr width="2px" color="white">
         <hr>
         <h1 class="main-left" style="padding-left: 60rem ;"> Have a doubt?</h1>
@@ -76,7 +76,7 @@
                 <li>How much are you planning to spend to get there?</li>
             </ul>
         </div>
-        <form action="php/contect_process.php" class="form-1">
+        <form action="php/contact_process.php" class="form-1">
             <center>
                 <legend>
                     <label for="">What can we do for you?</label><br>
@@ -94,9 +94,9 @@
                     <?php
                     if (isset($_SESSION['status'])) {
                     ?>
-                        <p style="color: green; size: 16px;">
-                            <?php echo $_SESSION['status']; ?>
-                        </p>
+                    <p style="color: green; size: 16px;">
+                        <?php echo $_SESSION['status']; ?>
+                    </p>
                     <?php unset($_SESSION['status']);
                     }
                     ?>

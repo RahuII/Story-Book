@@ -33,15 +33,15 @@
             <a href="aboutPage.php">About</a>
             <a href="booksPage.php">Books</a>
             <!-- <a href="genrePage.html">genre</a> -->
-            <a href="contectPage.php">contact</a>
+            <a href="contactPage.php">contact</a>
             <?php
             if (!isset($_SESSION['name'])) {
             ?>
-                <a href="logIn-page.php">LogIn</a>
+            <a href="logIn-page.php">LogIn</a>
             <?php
             } else {
             ?>
-                <a href="php/user-profile.php"><?php echo $_SESSION['name']; ?></a>
+            <a href="php/user-profile.php"><?php echo $_SESSION['name']; ?></a>
             <?php
             }
 
@@ -111,17 +111,17 @@
 
     <section class="category" id="category">
 
-        <h1 class="heading"> top <span>tranding</span> </h1>
+        <h1 class="heading"> top <span>trending</span> </h1>
 
         <div class="box-container">
 
             <div class="box">
-                <h3>Browsings</h3>
+                <h3>Browsing</h3>
                 <div>
                     <p class="abt-book">a Year of Reading, Collecting, and Living With Books</p>
                 </div>
                 <div>
-                    <p><span>Dirda, Michael</span></p>
+                    <p><span>Dirham, Michael</span></p>
                 </div>
                 <a href="" class="btn">read</a>
             </div>
@@ -161,7 +161,7 @@
             <div class="box">
                 <h3>Wild About Books</h3>
                 <div>
-                    <p class="abt-book">By judy sierra, picures by mark brown</p>
+                    <p class="abt-book">By judy sierra, pictures by mark brown</p>
                 </div>
                 <div>
                     <p><span>Sierra, Judy</span></p>
@@ -175,7 +175,7 @@
                     <p class="abt-book"></p>
                 </div>
                 <div>
-                    <p><span>Stoop, Naoko</span></p>
+                    <p><span>Stoop, Nanook</span></p>
                 </div>
                 <a href="#" class="btn">read</a>
             </div>
