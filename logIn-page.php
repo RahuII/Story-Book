@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Radius - Signin/Signup</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="assets/CSS/style.css">
     <?php session_start(); ?>
@@ -25,7 +26,18 @@
             <a href="categoryPage.html">Books</a>
             <!-- <a href="genrePage.html">genre</a> -->
             <a href="contectPage.php">Contact</a>
+            <?php
+            if (!isset($_SESSION['name'])) {
+            ?>
             <a href="logIn-page.php">LogIn</a>
+            <?php
+            } else {
+            ?>
+            <a href="php/user-profile.php"><?php echo $_SESSION['name']; ?></a>
+            <?php
+            }
+            ?>
+            }
         </nav>
 
         <div class="icons">
@@ -40,7 +52,8 @@
     </header>
     <div class="container" id="container">
         <div class="form-container sign-up-container">{}
-            <form autocomplete="off" method="post" action="signUp.php" onSubmit="return validate(this);" name="form">
+            <form autocomplete="off" method="post" action="php/signUp.php" onSubmit="return validate(this);"
+                name="form">
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -55,7 +68,8 @@
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form autocomplete="off" method="post" action="loginProcess.php" onSubmit="return validate(this);" name="form">
+            <form autocomplete="off" method="post" action="php/loginProcess.php" onSubmit="return validate(this);"
+                name="form">
                 <h1>Sign in</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -66,9 +80,9 @@
                 <?php
                 if (isset($_SESSION['status'])) {
                 ?>
-                    <span style="color: green;">
-                        <?php echo $_SESSION['status']; ?>
-                    </span>
+                <span style="color: green;">
+                    <?php echo $_SESSION['status']; ?>
+                </span>
                 <?php unset($_SESSION['status']);
                 }
                 ?>

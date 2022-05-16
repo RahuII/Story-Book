@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <?php
+    session_start();
+    ?>
     <title>Cagtegory</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +27,18 @@
             <a href="booksPage.php">books</a>
             <!-- <a href="genrePage.html">genre</a> -->
             <a href="contectPage.php">contact</a>
-            <a href="logIn-page.php">LogIn</a>
+            <?php
+            if (!isset($_SESSION['name'])) {
+            ?>
+                <a href="logIn-page.php">LogIn</a>
+            <?php
+            } else {
+            ?>
+                <a href="php/user-profile.php"><?php echo $_SESSION['name']; ?></a>
+            <?php
+            }
+            ?>
+            }
         </nav>
 
         <div class="icons">

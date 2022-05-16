@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Eczar&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <?php session_start(); ?>
 
 </head>
 
@@ -36,7 +37,18 @@
             <a href="booksPage.php">Books</a>
             <!-- <a href="genrePage.html">genre</a> -->
             <a href="contectPage.php">contact</a>
-            <a href="logIn-page.php">LogIn</a>
+            <?php
+            if (!isset($_SESSION['name'])) {
+            ?>
+                <a href="logIn-page.php">LogIn</a>
+            <?php
+            } else {
+            ?>
+                <a href="php/user-profile.php"><?php echo $_SESSION['name']; ?></a>
+            <?php
+            }
+            ?>
+            }
         </nav>
 
         <div class="icons">
@@ -64,21 +76,30 @@
                 <li>How much are you planning to spend to get there?</li>
             </ul>
         </div>
-        <form action="" class="form-1">
+        <form action="php/contect_process.php" class="form-1">
             <center>
                 <legend>
                     <label for="">What can we do for you?</label><br>
                     <button>Story</button>
                     <button>Book</button>
                     <button>other</button><br>
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email"><br>
-                    <textarea name="" id="" cols="50" rows="5" placeholder="details"></textarea><br>
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="email" placeholder="Email" name="email"><br>
+                    <textarea name="txt" id="" cols="50" rows="5" placeholder="details"></textarea><br>
                     <a class="send" href="">
 
-                        Send request
+                        <button type="submit">Send request</button>
 
                     </a>
+                    <?php
+                    if (isset($_SESSION['status'])) {
+                    ?>
+                        <p style="color: green; size: 16px;">
+                            <?php echo $_SESSION['status']; ?>
+                        </p>
+                    <?php unset($_SESSION['status']);
+                    }
+                    ?>
                 </legend>
             </center>
         </form>

@@ -15,7 +15,7 @@ while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) {
 if ($pwd == $dbpwd) {
     session_start();
     $_SESSION['name'] = $name;
-    header("Location: index.php");
+    header("Location: ../index.php");
 } else {
-    header("Location: logIn-page.php");
+    header("Location: ../logIn-page.php");
 }
